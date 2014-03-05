@@ -1,4 +1,6 @@
 Demoapp::Application.routes.draw do
+  resources :tweets
+
   root "static_pages#home"
   match '/help', to:'statics_pages#help', via:'get'
   resources :users
